@@ -6,7 +6,7 @@
     }
 }
 
-document.getElementById("purple_box_button").onclick = function() {
-    var purpleBox = document.getElementById("purple_box");
-    toggleClass(purpleBox, "change_box");
+document.getElementById("purple_square_button").onclick = function() {
+    var purpleSquare = document.getElementById("purple_square");
+    toggleClass(purpleSquare, "change_square");
 };
