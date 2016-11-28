@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays</title>
+    
+<style>
+    body {
+        background-color:#5DADEC;
+    }
+</style>
+</head>
+<body>
+    <!-- background-color is Blue Jeans -->
+       <h1>Arrays</h1>
+<p>Here is an array called Storms: Winter, Fire, Wind, Water-base, Thunder, Hail, Sand</p>
+<p>Choose an item in the array by its number, (0-6)</p> <input type="number" id="array"=></input>
+<p><button onclick="array()">Click Me</button></p>
+
+<p id="collections"></p>
+<script>
+function array() {
+var Storms = ["Winter", "Fire", "Wind", "Water-base", "Thunder","Hail", "Sand"];
+var arrayNum = document.getElementById("array").value
+document.getElementById("collections").innerHTML = Storms[arrayNum];
+}
+</script>
+    </body>
+<br>
+<br>
+<br>
+<footer>
+    <a href="Loops,Conditionals,Functions,Parameters,&Arrays.html"> Loops, Conditionals, Functions, Parameters, and Arrays</a>
+</footer>
+</html>
