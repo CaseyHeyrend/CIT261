@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parameters</title>
+    
+<style>
+    body {
+        background-color:#5DADEC;
+    }
+</style>
+</head>
+<body>
+    <!-- background-color is Blue Jeans -->
+<h1>Parameters</h1>
+<p>This function will be passed these (4) parameters then calculate them together.</p>
+<p>Enter a number:
+<input type="number" id="para1"=></input></p>
+<p>Enter a number:
+<input type="number" id="para2"=></input></p>
+<p>Enter a number:
+<input type="number" id="para3"=></input></p>
+<p>Enter a number:
+<input type="number" id="para4"=></input></p>
+
+<p><button onclick="sumPara()">Push My Button</button></p>
+
+<p id ="parametersresults"></p>
+<script>
+function sumPara() 
+{
+var para1 = document.getElementById("para1").value;
+var para2 = document.getElementById("para2").value;
+var para3 = document.getElementById("para3").value;
+var para4 = document.getElementById("para4").value;
+  
+var final = para1 + para2 + para3 + para4;
+document.getElementById("parametersresults").innerHTML = final;
+}
+</script>
+</body>
+<br>
+<br>
+<br>
+<footer>
+    <a href="Loops,Conditionals,Functions,Parameters,&Arrays.html"> Loops, Conditionals, Functions, Parameters, and Arrays</a>
+</footer>
+</html>
