@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object Creation</title>
+<style>
+    body {
+        background-color:#AD4379;
+    }
+table {
+    font-family: Tahoma, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+</style>
+    </head>
+    <body>
+        <!-- background-color is Mystic Maroon -->
+<h1>Javascript Object</h1>
+<p>Enter the following information to create and display a Javascript Object created with a function.</p>
+<div >
+First Name:  <p style="text-align:justify;"><input type="text" id="firName"=></input></p>
+Last Name:   <p style="text-align:justify;"><input type="text" id="lasName"=></input></p>
+Age:         <p style="text-align:justify;"><input type="text" id="age"=></input></p>
+Gender:      <p style="text-align:justify;"><input type="text" id="gender"=></input></p>
+Eye Color:   <p style="text-align:justify;"><input type="text" id="eye"=></input></p>
+</div>
+<p><button onclick="createVar()">Submit</button></p>
+ 
+<p id=createdOBJ></p>
+<p id=createdOBJC></p>
+<br>
+<h1>Inheritance</h1>
+<p>The function will run again when you click continue, It will give you Pepper's profile. <button onclick="createPepper()">Submit</button></p>
+
+<script>
+function createObject(firstName, lastName, gender, age, eyecolor){
+this.first = firstName;
+this.last = lastName;
+this.old = age;
+this.sex = gender;
+this.eye = eyecolor;
+
+}
+</script>
+<script>
+function createVar(){
+var one = document.getElementById("firstName").value;
+var two = document.getElementById("lastName").value;
+var three = document.getElementById("gender").value;
+var four = document.getElementById("age").value;
+var five = document.getElementById("eye").value;
+
+var createOBJ = new createObject(one, two, three, four, five);
+document.getElementById("createdOBJ").innerHTML = 
+createOBJ.last + "," + 
+createOBJ.first + "," + 
+createOBJ.sex + "," + 
+createOBJ.old + "," + 
+createOBJ.eye;
+}
+</script>
+
+<script>
+function createPepper(){
+var one = "Pepper";
+var two = "Washington";
+var three = "Female";
+var four = "55";
+var five = "Blue";
+
+var createOBJC = new createObject(one, two, three, four, five);
+document.getElementById("createdOBJC").innerHTML = createOBJC.last + "," + createOBJC.first + "," + createOBJC.sex + "," + createOBJC.old + createOBJC.eye;
+}
+</script>
+</body>
+<br>
+<br>
+<br>
+<footer>
+    <a href="http://www.xxstormynightxx.com/Cit-261-Assignments.html">Assignments</a>
+</footer>
+</html>
