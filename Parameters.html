@@ -14,27 +14,27 @@
 <h1>Parameters</h1>
 <p>This function will be passed these (4) parameters then calculate them together.</p>
 <p>Enter a number:
-<input type="number" id="para1"=></input></p>
+<input type="number" id="meter1"=></input></p>
 <p>Enter a number:
-<input type="number" id="para2"=></input></p>
+<input type="number" id="meter2"=></input></p>
 <p>Enter a number:
-<input type="number" id="para3"=></input></p>
+<input type="number" id="meter3"=></input></p>
 <p>Enter a number:
-<input type="number" id="para4"=></input></p>
+<input type="number" id="meter4"=></input></p>
 
-<p><button onclick="sumPara()">Push My Button</button></p>
+<p><button onclick="sumMeter()">Push My Button</button></p>
 
-<p id ="parametersresults"></p>
+<p id ="ParameterResults"></p>
 <script>
-function sumPara() 
+function sumMeter() 
 {
-var para1 = document.getElementById("para1").value;
-var para2 = document.getElementById("para2").value;
-var para3 = document.getElementById("para3").value;
-var para4 = document.getElementById("para4").value;
+var meter1 = document.getElementById("meter1").value;
+var meter2 = document.getElementById("meter2").value;
+var meter3 = document.getElementById("meter3").value;
+var meter4 = document.getElementById("meter4").value;
   
-var final = para1 + para2 + para3 + para4;
-document.getElementById("parametersresults").innerHTML = final;
+var final = meter1 + meter2 - meter3 * meter4;
+document.getElementById("ParameterResults").innerHTML = final;
 }
 </script>
 </body>
