@@ -12,18 +12,21 @@
 <body>
     <!-- background-color is Blue Jeans -->
        <h1>Arrays</h1>
-<p>Here is an array called Storms: Winter, Fire, Wind, Water-base, Thunder, Hail, Sand</p>
-<p>Choose an item in the array by its number, (0-6)</p> <input type="number" id="array"=></input>
-<p><button onclick="array()">Click Me</button></p>
+<!--Here is an array called different types of Storms: Winter, Fire, Wind, Water-base-->
+<button onclick="myStorm()">Click me</button>
 
-<p id="collections"></p>
+<p id="types"></p>
+
 <script>
-function array() {
-var Storms = ["Winter", "Fire", "Wind", "Water-base", "Thunder","Hail", "Sand"];
-var arrayNum = document.getElementById("array").value
-document.getElementById("collections").innerHTML = Storms[arrayNum];
+var storms = ["Winter", "Fire", "Wind", "Water-base"];
+document.getElementById("types").innerHTML = storms;
+
+function myStorm() {
+    storms.sort();
+    document.getElementById("types").innerHTML = storms;
 }
 </script>
+
     </body>
 <br>
 <br>
