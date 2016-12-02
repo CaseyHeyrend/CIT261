@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <head>
         <title>Json</title>
+        <meta charset="UTF-8">
 <style>
 body {
         background-color:#652DC1;
+        font-family: Lucida Sans Unicode, sans-serif;
     }
 table {
     font-family: Lucida Sans Unicode, sans-serif;
@@ -25,8 +27,8 @@ tr:nth-child(even) {
 <!-- Wisteria -->
 <body>
 <h1>Json</h1>
-<p>The Json file is called "Characters.json" this page loads that file, parses the info and displays it below.</p>
-<div id="id01"></div>
+<p>The Json file is called "Characters.json" this page loads that file, and show the info and displays it below.</p>
+<div id="chara"></div>
 
 <script>
 var xmlhttp = new XMLHttpRequest();
@@ -53,7 +55,7 @@ function myFunction(response) {
         "</td><td>";
     }
     out += "</table>";
-    document.getElementById("id01").innerHTML = out;
+    document.getElementById("chara").innerHTML = out;
 }
 </script>
 
@@ -65,5 +67,3 @@ function myFunction(response) {
     <a href="http://www.xxstormynightxx.com/Cit-261-Assignments.html">Assignments</a>
 </footer>
 </html>
-
-
