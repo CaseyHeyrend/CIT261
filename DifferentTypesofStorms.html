@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="DifferentTypesofStorms.css" rel="stylesheet" type="text/css" media="screen"/>
 		<title>Different Types of Storms</title>
                 <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link href="DifferentTypesofStorms.css" rel="stylesheet" type="text/css"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
                </head>
    <!--background is from http://weknowyourdreams.com/images/sky/sky-04.jpg -->
    <body>
-       <div id="winter" class="shadow">
-  <img class='opaque' src="http://www.xxstormynightxx.com/uploads/4/3/8/8/4388468/3496007.jpg?291;" />
-  <img src="http://www.xxstormynightxx.com/uploads/4/3/8/8/4388468/9396398.jpg?296;" />
-  <img src="http://www.xxstormynightxx.com/uploads/4/3/8/8/4388468/2560313.jpg?295;" />
-  <img src="http://www.xxstormynightxx.com/uploads/4/3/8/8/4388468/7476074.jpg?298;" />
+<div class = 'search' id = 'searchBox'>
+<div class = 'search1' id = 'searchBox1'>
+<p><input type="text" placeholder="Please enter a storm name" class="focus" id="stormName" onkeydown = "if (event.keyCode == 13)
+                        document.getElementById('searchButton').click()"></input><button id ='searchButton' button class="go">go</button></p>
 </div>
-<p id="winter_controls">
-  <span class="selected">Image 1</span>
-  <span>Image 2</span>
-  <span>Image 3</span>
-  <span>Image 4</span>
-</p>
+</div>
+</body>
+</html>
+   
     </body>
     
     <script src="DifferentTypesofStorms.js" type="text/javascript"></script>
@@ -38,3 +35,4 @@
         <p>© 2016 XxStormyNightxX. All rights reserved</p>
     </footer>
 </html>
+
